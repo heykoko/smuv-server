@@ -15,7 +15,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = 'bb23388af5c6466495fc2883a2751ffe'; // Your client id
 var client_secret = '9facec38bc4c482a9a7ed57eb99cf5cd'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = 'http://localhost:8888/callback' || "https://stormy-refuge-00514.herokuapp.com/callback" ; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
