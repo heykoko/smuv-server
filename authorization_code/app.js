@@ -104,7 +104,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('./profile/#' +
+        res.redirect('http://localhost:3000/profile/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
@@ -142,6 +142,9 @@ app.get('/refresh_token', function(req, res) {
     }
   });
 });
+
+// var port = process.env.PORT || 8888;
+// var app = express();
 
 console.log('Listening on 8888');
 app.listen(8888);
