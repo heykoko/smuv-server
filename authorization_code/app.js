@@ -143,7 +143,7 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-// var port = process.env.PORT || 8888;
+var port = process.env.PORT || 8888;
 // var app = express();
 
 console.log('Listening on 8888');
