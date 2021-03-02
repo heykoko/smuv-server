@@ -33,6 +33,7 @@ var generateRandomString = function(length) {
 };
 
 var stateKey = 'spotify_auth_state';
+var port = process.env.PORT || 8888;
 
 var app = express();
 
@@ -143,8 +144,7 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-var port = process.env.PORT || 8888;
-// var app = express();
+
 
 console.log('Listening on 8888');
 app.listen(8888);
